@@ -50,7 +50,7 @@ namespace Proiect.Studenti.Controllers
             return student;
         }
 
-        //POST: api/studenti
+        //PUT: api/studenti
         [HttpPut]
         public ActionResult<Student> PutStudent(Student student)
         {
@@ -64,7 +64,6 @@ namespace Proiect.Studenti.Controllers
         [HttpDelete("{id}")]
         public ActionResult<Student> DeleteStudent(int id)
         {           
-            //HttpRequestHeaders headers = request.Headers;
             StringValues values;
             bool validKey = false;
 

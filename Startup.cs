@@ -28,8 +28,7 @@ namespace Proiect.Studenti
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<StudentContext>
-                (opt => opt.UseSqlServer(Configuration["Data:StudentiConnection:ConnectionString"]));
-            //services.AddControllers();
+                (opt => opt.UseSqlServer(Configuration["Data:StudentiConnection:ConnectionString"]));           
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
